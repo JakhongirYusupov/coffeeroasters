@@ -1,0 +1,215 @@
+.chooseus {
+    .chooseus_section {
+        max-width: 1280px;
+        min-height: 577px;
+        margin: 0 auto;
+        background-color: #2C343E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .chooseus_main {
+        max-width: 540px;
+        margin-top: 100px;
+
+        &_title {
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #FEFCF7;
+        }
+
+        &_desc {
+            margin-top: 32px;
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #FEFCF7;
+            opacity: 0.8;
+        }
+    }
+
+    &_list {
+        margin: 0px 30px;
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        bottom: -150px;
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 350px;
+            padding: 0px 47px 48px 47px;
+            background: #0E8784;
+            border-radius: 8px;
+        }
+
+        &_img_box {
+            margin-top: 72px;
+        }
+
+        &_img {
+            width: 71px;
+            height: 72px;
+        }
+
+        &_main {
+            margin-top: 56px;
+        }
+
+        &_title {
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: #FEFCF7;
+        }
+
+        &_desc {
+            margin-top: 24px;
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #FEFCF7;
+        }
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .chooseus {
+        .chooseus_section {
+            max-width: 688px;
+            min-height: 573px;
+        }
+
+        .chooseus_main {
+            margin-top: 56px;
+
+            &_title {
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            &_desc {
+                margin-top: 24px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+
+        &_list {
+            margin: 0 24px;
+            display: grid;
+            row-gap: 24px;
+            bottom: -294px;
+
+            &_item {
+                min-height: 180px;
+                max-width: 573px;
+                flex-direction: row;
+                justify-content: center;
+                padding: 0px 48px 0px 0px;
+            }
+
+            &_img_box {
+                margin-top: 0;
+                margin-left: 70px;
+            }
+
+            &_img {
+                width: 55px;
+                height: 56px;
+            }
+
+            &_main {
+                margin-top: 0;
+                margin-left: 55px;
+            }
+
+            &_title {
+                text-align: left;
+            }
+
+            &_desc {
+                margin-top: 16px;
+                text-align: left;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .chooseus {
+        .container {
+            padding: 0 24px;
+        }
+
+        .chooseus_section {
+            max-width: 527px;
+            min-height: 902px;
+            padding: 0 24px;
+        }
+
+        .chooseus_main {
+            margin-top: 64px;
+
+            &_title {
+                font-size: 28px;
+                line-height: 28px;
+                text-align: center;
+            }
+        }
+
+        &_list {
+            bottom: -603px;
+
+            &_item {
+                padding: 0;
+                max-width: 279px;
+                min-height: 382px;
+                flex-direction: column;
+                justify-content: start;
+            }
+
+            &_img_box {
+                margin: 0;
+                margin-top: 72px;
+            }
+
+            &_img {
+                width: 71px;
+                height: 72px;
+            }
+
+            &_main {
+                margin: 0;
+                margin-top: 56px;
+            }
+
+            &_title {
+                text-align: center;
+            }
+
+            &_desc {
+                max-width: 212px;
+                margin: 24px 34px 0px 34px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}

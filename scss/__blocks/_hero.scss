@@ -1,0 +1,109 @@
+.hero {
+    .hero_section {
+        padding: 117px 0px 116px 85px;
+        border-radius: 10px;
+        background-image: url("../../images/hero_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &_main {
+        max-width: 493px;
+
+        &_title {
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            color: #FEFCF7;
+        }
+
+        &_desc {
+            max-width: 400px;
+            margin-top: 32px;
+            margin-bottom: 56px;
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+            opacity: 0.8;
+        }
+
+        &_btn {
+            padding: 15px 31px;
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FEFCF7;
+            background-color: #0E8784;
+            border-radius: 6px;
+
+            &:hover {
+                background-color: #66D2CF;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        .hero_section {
+            padding: 104px 0px 104px 58px;
+            background-position: -150px;
+        }
+    }
+
+    .hero_main {
+        max-width: 398px;
+
+        &_title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &_desc {
+            font-size: 15px;
+            line-height: 25px;
+            margin-top: 24px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 624px) {
+    .hero {
+        .container {
+            padding: 0 24px;
+        }
+
+        .hero_section {
+            padding: 0;
+            padding: 100px 24px;
+            display: grid;
+            place-content: center;
+            background-position: 0;
+            background-image: url("../../images/hero_background_mobile.jpg");
+        }
+
+        &_main {
+            max-width: 279px;
+            display: grid;
+            place-content: center;
+
+            &_title {
+                font-size: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            &_desc {
+                text-align: center;
+            }
+        }
+    }
+}

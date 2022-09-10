@@ -1,0 +1,208 @@
+.plans {
+    padding-top: 351px;
+
+    .container {
+        max-width: 1125px;
+        padding-bottom: 211px;
+    }
+
+    &_action {
+        max-width: 790px;
+        margin-right: 255px;
+    }
+
+    &_action_title {
+        margin-bottom: 95px;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+
+    &_action_article {
+        max-width: 760px;
+        margin-left: 15px;
+        border: 2px solid #FDD6BA;
+        position: relative;
+
+        span {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 31px;
+            height: 31px;
+            position: absolute;
+            background: #FEFCF7;
+            border: 2px solid #0E8784;
+            border-radius: 50%;
+        }
+
+        span:first-child {
+            left: -15px;
+        }
+
+        span:nth-child(2) {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        span:last-child {
+            right: -15px;
+        }
+    }
+
+    &_main {
+        margin-top: 82px;
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        &_item {
+            max-width: 285px;
+        }
+
+        &_item_num {
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            color: #FDD6BA;
+        }
+
+        &_item_title {
+            max-width: 230px;
+            margin-top: 38px;
+            margin-bottom: 42px;
+            font-family: 'Fraunces';
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            color: #333D4B;
+        }
+
+        &_item_desc {
+            font-family: 'Barlow';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333D4B;
+        }
+    }
+
+    &_btn_box {
+        margin-top: 64px;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    .plans {
+        padding-top: 434px;
+
+        .container {
+            max-width: 769px;
+            padding-bottom: 144px;
+        }
+
+        &_action {
+            max-width: 550px;
+            margin-right: 150px;
+        }
+
+        &_action_title {
+            margin-bottom: 55px;
+        }
+
+        &_action_article {
+            max-width: 497px;
+        }
+
+        &_main {
+            margin-top: 62px;
+
+            &_item {
+                max-width: 223px;
+            }
+
+            &_item_title {
+                margin-top: 42px;
+                margin-bottom: 38px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+
+            &_item_desc {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+
+        &_btn_box {
+            margin-top: 44px;
+        }
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .plans {
+        padding-top: 717px;
+
+        .container {
+            max-width: 100%;
+            padding: 0 24px;
+            padding-bottom: 120px;
+        }
+
+        &_action {
+            margin: 0;
+        }
+
+        &_action_title {
+            margin: 0;
+            text-align: center;
+        }
+
+        &_action_article {
+            display: none;
+        }
+
+        &_main {
+            margin-top: 80px;
+
+            &_list {
+                display: grid;
+                gap: 56px;
+            }
+
+            &_item {
+                max-width: 100%;
+            }
+
+            &_item_num {
+                text-align: center;
+            }
+
+            &_item_title {
+                max-width: 100%;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                text-align: center;
+                font-size: 28px;
+                line-height: 32px;
+            }
+
+            &_item_desc {
+                text-align: center;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+
+        &_btn_box {
+            text-align: center;
+            margin-top: 79px;
+        }
+    }
+}

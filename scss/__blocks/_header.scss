@@ -1,0 +1,57 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_aside {
+    display: none;
+  }
+
+  &_logo {
+    width: 236px;
+    height: 26px;
+  }
+
+  &_nav_box {
+    display: flex;
+    gap: 33px;
+  }
+
+  &_nav_box_item_link {
+    font-family: 'Barlow';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+
+    &:hover {
+      color: #333D4B;
+    }
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .header {
+
+    .container {
+      padding: 0 24px;
+    }
+
+    &_logo {
+      width: 163px;
+      height: 18px;
+    }
+
+    &_nav {
+      display: none;
+    }
+
+    &_aside {
+      display: contents;
+    }
+  }
+}
